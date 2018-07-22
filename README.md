@@ -2,7 +2,7 @@
 Docker image including CUDA and Fiji
 
 Pull: docker pull shuenlim/fijicuda:latest
-Run (linux): docker run -it --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v SAVED_DATA:/fiji/data fijicuda:latest
+Run (linux): nvidia-docker run -it --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v SAVED_DATA:/fiji/data fijicuda:latest
 (change SAVED_DATA location)
 
 Used the following Dockerfiles to build fijicuda:
